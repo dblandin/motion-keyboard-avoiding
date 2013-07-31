@@ -73,7 +73,7 @@ class Motion
 
     def textFieldDidEndEditing(text_field)
       view_frame = view.frame
-      view_frame.origin.y += animated_distance
+      view_frame.origin.y += animated_distance || 0.0
 
       set_frame(view_frame)
     end
